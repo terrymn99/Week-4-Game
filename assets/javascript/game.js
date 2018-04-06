@@ -12,15 +12,20 @@ $(document).ready (function () {
     function buildgame() {
         $(".directionsA").text("You will be give a random number to begin the game.");
         $(".directionsB").text("There are 4 crystals below. Clicking on a crystal will add a specific amount to your total score.");
-        $(".directionsC").text("You win the game by exactly matching your total to the random number.");
+        $(".directionsC").text("You win the game by exactly matching your total score to the random number.");
         $(".directionsD").text("You lose the game if your total score goes above the random number.");
         $(".directionsE").text("The value of each crystal is hidden from you until you click on it.");
         $(".directionsF").text("Each time when the game starts, the game will change the values of each crystal.");
+        $(".randomBanner").text("Random Number");
+        $(".winBanner").text("Win Total");
+        $(".loseBanner").text("Loss Total");
         $(".randomNumber").html(targetScore);
-        $(".winLoseTotal").html(wins, losses);
+        $(".winTotal").html(wins);
+        $(".loseTotal").html(losses);
         $(".scoreBanner").text("Your total score is:");
         $(".userScore").html(userScore);
     }
+    
 
 
 

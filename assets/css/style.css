@@ -1,5 +1,5 @@
 .container {
-    background-color: rgb(166, 230, 230);
+    background-color: rgb(96, 100, 100);
     width: 600px;   
 }
 
@@ -20,7 +20,7 @@ h2 {
 
 #title {
     color: white;
-    background-color: orangered;
+    background-color: rgb(32, 187, 18);
     padding-top: 10px;
     padding-bottom: 10px;
     height: 100px;
@@ -28,13 +28,22 @@ h2 {
 }
 
 .allDirections {
-    background-color: rgb(214, 214, 103);
+    background-color: rgb(120, 162, 241);
     padding-top: 10px;
-    padding-bottom: 10px;  
+    padding-bottom: 10px; 
+    margin-left: 5px; 
+}
+
+.randomBanner {
+    width: 207px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: blue;
+    color: white; 
 }
 
 .randomNumber {
-    width: 200px;
+    width: 207px;
     height: 100px;
     color: black;
     background-color: blue;
@@ -44,10 +53,36 @@ h2 {
     font-size: 20px;
 }
 
-.winLoseTotal {
+.winBanner {
+    width: 98px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: blue;
     color: white;
-    width: 100px;
+}
+
+.loseBanner {
+    width: 98px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: blue;
+    color: white;
+}
+
+.winTotal {
+    background-color: blue;
+    color: white;
+    width: 98px;
+    height: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+.loseTotal {
+    background-color: blue;
+    color: white;
+    width: 98px;
     height: 100px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -60,7 +95,7 @@ h2 {
 }
 
 .scoreBanner {
-    width: 200px;
+    width: 207px;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: blue;
@@ -68,7 +103,7 @@ h2 {
 }
 
 .userScore {
-    width: 200px;
+    width: 207px;
     height: 100px;
     padding-top: 10px;
     padding-bottom: 10px;
