@@ -5,13 +5,18 @@ $(document).ready (function () {
     var losses = 0;
     var firstKey = true;
     var userScore = 0;
+    var Total1=0;
+    var Total2=0;
+    var Total3=0;
+    var Total4=0;
     var targetScore = Math.floor(Math.random() * ((120-19)+1) + 19);
     var crystal1RandNum = Math.floor(Math.random() * 12)+1;
     var crystal2RandNum = Math.floor(Math.random() * 12)+1;
     var crystal3RandNum = Math.floor(Math.random() * 12)+1;
     var crystal4RandNum = Math.floor(Math.random() * 12)+1;
+    
 
-    // Press enter to begin game
+    // Click here to begin game
     $("#gameTag").click(function () {
         buildGame();
         });
@@ -37,66 +42,52 @@ $(document).ready (function () {
     } //Ends buildGame function
 
         
-        //Set .userScore = userScore + Crystal1RandNum (displays in total score)
+        
     function playGame ()  {
 
-        var newTotal1=userScore + crystal1RandNum;
-            console.log (newTotal1);
+        //$(".crystal-1, .crystal-2, .crystal-3, .crystal-4").on("click", function() {
+           //Total1=userScore+crystal1RandNum;
+            //if (Total1 < targetScore) {
+               // playgame ();
+            //}
+           // else {
+               //if (Total1 === targetScore) {
+                   //alert ("You Won!!");
+                   // buildGame ();
+               // }
+            //}
+        
+        //});
+
+        //Get value for crystal 1
         $(".crystal-1").on("click", function() {
-            $(".userScore").html(userScore + crystal1RandNum); 
-            
+               Total1=userScore + crystal1RandNum;
+               $(".totalScore").html(Total1+Total2+Total3+Total4);
+                console.log (Total1+Total2+Total3+Total4); 
         });
 
-        //Set .userScore = userScore + Crystal2RandNum (displays in total score)
-        var newTotal2=userScore + crystal2RandNum;
-            console.log (newTotal2);
+        //Get value for crystal 2
         $(".crystal-2").on("click", function() {
-            $(".userScore").html(userScore + crystal2RandNum); 
+                Total2=userScore + crystal2RandNum;
+                $(".totalScore").html(Total1+Total2+Total3+Total4);
+                console.log (Total2);
         });
 
-         //Set .userScore = userScore + Crystal3RandNum (displays in total score)
-         var newTotal3=userScore + crystal3RandNum;
-            console.log (newTotal3);
-         $(".crystal-3").on("click", function() {
-            $(".userScore").html(userScore + crystal3RandNum); 
+         //Get value for crystal 3
+        $(".crystal-3").on("click", function() {
+                Total3=userScore + crystal3RandNum;
+               $(".totalScore").html(Total1+Total2+Total3+Total4);
+                console.log (Total3);
         });
 
-         //Set .userScore = userScore + Crystal4RandNum (displays in total score)
-         var newTotal4=userScore + crystal4RandNum;
-            console.log (newTotal4);
-         $(".crystal-4").on("click", function() {
-            $(".userScore").html(userScore + crystal4RandNum); 
+         //Get value for crystal 4
+        $(".crystal-4").on("click", function() {
+                Total4=userScore + crystal4RandNum;
+                $(".totalScore").html(Total1+Total2+Total3+Total4);
+                console.log (Total4);
         });
     } //Ends playGame function
 
-
-        
-
-
-        //console.log (userScore + crystal1RandNum);
-        //console.log (userScore + crystal2RandNum);
-        //console.log (userScore + crystal3RandNum);
-        //console.log (userScore + crystal4RandNum);
-     
-        
-        
-
-        
-    
-        //Add each crystal click to user score
-      
-
-
-
-        
-
-    
-    //Begin game 
-    
-
-    // Play game
-    // Click on any crystal
-    
 
 
     // Update userScore
@@ -110,4 +101,4 @@ $(document).ready (function () {
 
 
 
-    }) //Ends (document).ready function
+     }); //Ends (document).ready function
