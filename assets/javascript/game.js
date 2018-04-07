@@ -61,29 +61,29 @@ $(document).ready (function () {
 
         //Get value for crystal 1
         $(".crystal-1").on("click", function() {
-               Total1=userScore + crystal1RandNum;
-               $(".totalScore").html(Total1+Total2+Total3+Total4);
+               userScore= userScore+crystal1RandNum;
+               $(".totalScore").html(userScore);
                 console.log (Total1+Total2+Total3+Total4); 
         });
 
         //Get value for crystal 2
         $(".crystal-2").on("click", function() {
-                Total2=userScore + crystal2RandNum;
-                $(".totalScore").html(Total1+Total2+Total3+Total4);
+                userScore=userScore+crystal2RandNum;
+                $(".totalScore").html(userScore);
                 console.log (Total2);
         });
 
          //Get value for crystal 3
         $(".crystal-3").on("click", function() {
-                Total3=userScore + crystal3RandNum;
-               $(".totalScore").html(Total1+Total2+Total3+Total4);
+                userScore=crystal3RandNum;
+               $(".totalScore").html(userScore);
                 console.log (Total3);
         });
 
          //Get value for crystal 4
         $(".crystal-4").on("click", function() {
-                Total4=userScore + crystal4RandNum;
-                $(".totalScore").html(Total1+Total2+Total3+Total4);
+                userScore=crystal4RandNum;
+                $(".totalScore").html(userScore);
                 console.log (Total4);
         });
     } //Ends playGame function
